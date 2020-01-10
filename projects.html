@@ -1,0 +1,510 @@
+{%extends "blog/layout.html"%}
+{% load static from staticfiles %}
+{%load static%}
+{%block title%}
+Projects
+{%endblock%}
+
+{%block content%}
+<div class="container">
+  <h1 class="text-center">
+    Projects
+  </h1>
+    <p class="lead">Here is a portfolio of my personal, class and extracurricular projects.</p>
+    <p class="lead">I want to better myself, so I would appreciate any feedback on my work.
+      If you have suggestions with regards to this website, my work, or if you just want to chat, please, feel free to <a href="mailto:alan.yessenbayev@gmail.com">contact me</a>.
+    </p>
+  <h3>
+      Graduate
+  </h3>
+  <div class="accordion" id="accordionGradExample">
+      <div class="card">
+          <div class="card-header" id="gradHeadingZero">
+      <h5>
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#gradCollapseZero" aria-expanded="true" aria-controls="gradCollapseOne">
+          Neural Multi-Object Detection
+              </button>
+          </div>
+      </h5>
+          <div id="gradCollapseZero" class="collapse" aria-labelledby="gradHeadingZero" data-parent="#accordionGradExample">
+              <div class="card-body">
+                  <div class="container content border shadow">
+                          <div class ="row bg-light rounded">
+                              <div class="col-sm my-2 py-auto">
+                                  <p>
+                                    I served as a team lead for my final project group for the <em>Machine Learning for Image Processing</em> course.
+                                    We analyzed the performance of two state-of-the-art deep learning algorithms, <em>YOLOv3</em> and <em>Faster R-CNN</em>.
+                                  </p>
+                                  <p>
+                                    We implemented both training and testing for both architectures and probed them using <em>PASCAL VOC</em> and <em>COCO</em> data sets.
+                                    We inspected the pace of training and conjectured efficient strategies for domain-specific transfer learning.
+                                  </p>
+                                  <p>
+                                    Suitability of the algorithms for a variety of application was considered. 
+                                    It was found that YOLO is suitable for time-sensitive tasks (like AI-controlled driving), while intermediate outputs of RCNN can be used for more accurate environment mapping.
+                                  </p>
+                                  <div class="row align-bottom">
+                                    <div class="col-10">
+                                        <ul class="align-bottom list-unstyled">
+                                            <li><b>Collaborators:</b> 
+                                              <ul>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/jahya-burke-9881a09b/">Jahya Burke</a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/6sayan1/">Sayan Mondal</a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/niharwahal/">Nihar Wahal</a></li>
+                                              </ul>
+                                            </li>
+                                            <li><b>Time Period:</b> April-June 2019</li>
+                                            <li><b>Paper:</b> <a target="_blank" href="/285/paper"><i class="far fa-file-pdf"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-2">
+                                        <span style="font-size: 2em;"><a target="_blank" href="https://github.com/JahyaBurke/ECE285_Sauvage_Object_Detection"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm text-center">
+                                  <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/det_dog-cycle-car.png"%}">
+                              </div>
+                          </div>
+                      </div>
+          </div>
+          </div>
+        </div>
+    <div class="card">
+      <div class="card-header" id="gradHeadingOne">
+  <h5>
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#gradCollapseOne" aria-expanded="true" aria-controls="gradCollapseOne">
+      Music Composition with Autoencoders
+          </button>
+      </div>
+  </h5>
+      <div id="gradCollapseOne" class="collapse" aria-labelledby="gradHeadingOne" data-parent="#accordionGradExample">
+          <div class="card-body">
+              <div class="container content border shadow">
+                      <div class ="row bg-light rounded">
+                          <div class="col-sm my-2 py-auto">
+                              <p>
+                                Our team utilized the <em>autoencoder</em> neural network architecture to compose loopy video game music. 
+                              </p>
+                              <p>
+                                Our composer generated 16-bar MIDI single-instrument piano rolls where each note is played with the stoccato articulation.
+                                This permitted us to ignore the length of each note played and concentrate on learning melodic structure.
+                              </p>
+                              <p>
+                                We wrote a paper to report on our findings and outline techniques used in detail.
+                              </p>
+                              <div class="row align-bottom">
+                                <div class="col-10">
+                                    <ul class="align-bottom list-unstyled">
+                                        <li><b>Collaborators:</b> 
+                                          <ul>
+                                            <li><a target="_blank" href="https://www.linkedin.com/in/jahya-burke-9881a09b/">Jahya Burke</a></li>
+                                            <li><a target="_blank" href="https://www.linkedin.com/in/yisheng-ji-726abb142/">Yisheng Ji</a></li>
+                                            <li><a target="_blank" href="https://www.linkedin.com/in/shiwei-rong-a58a70180/">Shiwei Rong</a></li>
+                                            <li><a target="_blank" href="https://www.linkedin.com/in/shuangcheng-yang-aa270186/">Shuangcheng Yang</a></li>
+                                          </ul>
+                                        </li>
+                                        <li><b>Time Period:</b> January-March 2019</li>
+                                        <li><b>Paper:</b> <a target="_blank" href="/271b/paper"><i class="far fa-file-pdf"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-2">
+                                    <span style="font-size: 2em;"><a target="_blank" href="https://github.com/yessenbayev/MusicComposer"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-sm text-center">
+                              <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/garageBand.png"%}">
+                          </div>
+                      </div>
+                  </div>
+      </div>
+      </div>
+    </div>
+      <div class="card">
+        <div class="card-header" id="gradHeadingTwo">
+		<h5>
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#gradCollapseTwo" aria-expanded="true" aria-controls="gradCollapseTwo">
+		    K-means in CUDA with OpenGL Visualization
+            </button>
+        </div>
+		</h5>
+        <div id="gradCollapseTwo" class="collapse" aria-labelledby="gradHeadingTwo" data-parent="#accordionGradExample">
+            <div class="card-body">
+                <div class="container content border shadow">
+                        <div class ="row bg-light rounded">
+                            <div class="col-sm my-2 py-auto">
+                                <p>
+                                    <em>K-means Clustering</em> is a fundamental unsupervised learning algorithm.
+                                    Our team wrote a low-level implementation of this algorithm in <em>NVIDIA CUDA</em> with <em>OpenGL</em> interoperability.
+                                </p>
+                                <p>
+                                    We performed <em>Principal Component Analysis</em> on the <em>MNIST</em> dataset using <a target="_blank" href="https://docs.nvidia.com/cuda/cusolver/index.html">cuSOLVER</a> library to embed it in three dimensions
+                                    and then we performed clustering in 3D space. 
+                                </p>
+                                <p>I primarily worked on the OpenGL visualization.</p>
+                                <div class="row align-bottom">
+                                  <div class="col-10">
+                                      <ul class="align-bottom list-unstyled">
+                                          <li><b>Collaborators:</b> 
+                                            <ul>
+                                              <li><a target="_blank" href="https://www.linkedin.com/in/unnikrishnansivaprasad/">Unnikrishnan Sivaprasad</a></li>
+                                              <li><a target="_blank" href="https://www.linkedin.com/in/vamshi-gudavarthi/">Vamshi Gudavarthi</a></li>
+                                              <li><a target="_blank" href="https://www.linkedin.com/in/gunjanpatil/">Gunjan Patil</a></li>
+                                            </ul>
+                                          </li>
+                                          <li><b>Time Period:</b> April-June 2018</li>
+                                      </ul>
+                                  </div>
+                                  <div class="col-2">
+                                      <span style="font-size: 2em;"><a target="_blank" href="https://github.com/yessenbayev/ece285kmeans"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-sm text-center">
+                                <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/mnist_visualize.gif"%}">
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  <h3>
+    Undergraduate
+  </h3>
+<div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Pharo Bike Lock
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div class="container content border shadow">
+                          <div class ="row bg-light rounded">
+                              <div class="col-sm my-2 py-auto">
+                                  <p>
+                                  <em>Pharo Bike Lock</em> is our final undergraduate design project (ECE 140A/B), which was modeled as a start-up. <em>Agile methodology</em> led us to creation of modular components,
+                                  which are independent and composable. This permitted us to continue working on the technical development during the process of product discovery.
+                                </p>
+                                  <p>
+                                      We utilized <a target="_blank" href="https://developer.apple.com/swift/">Swift</a>, <a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi</a>, and <a target="_blank" href="http://flask.pocoo.org/">Flask</a> to create this bike lock.
+                                      I primarily worked on Raspberry Pi programming and circuit design.
+                                  </p>
+                                  <div class="row align-bottom">
+                                    <div class="col-10">
+                                        <ul class="align-bottom list-unstyled">
+                                            <li><b>Collaborators:</b> 
+                                              <ul>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/ahnaf-ahmed-ba6a6813a/">Ahnaf Ahmed</a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/alexandraxhb/">Alexandra Hernandez</a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/yihuiyang1997/">Jerry Yihui Yang</a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/justin-tran-908241167/">Justin Tran</a></li>
+                                              </ul>
+                                            </li>
+                                            <li><b>Time Period:</b> April-June 2018</li>
+                                            <li><b>Website:</b> <a target="_blank" href="http://pharo-140.herokuapp.com">pharo-140.herokuapp.com</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-2">
+                                        <span style="font-size: 2em;"><a target="_blank" href="https://github.com/yessenbayev/Pharo/"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm text-center">
+                                  <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/pharo.jpg"%}">
+                              </div>
+                          </div>
+                      </div>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  SQL Database Manager
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div class="container content border shadow">
+                          <div class ="row bg-light rounded">
+                              <div class="col-sm my-2 py-auto">
+                                <p>
+                                We implemented cross-platform <em>SQL column-oriented database management system</em> for the <em>Software Foundations II</em> course using <em>C++11 programming language</em>. 
+                                </p>
+                                <p>
+                                    On top of primary <em>CRUD</em> functionality we implemented <em>caching</em> and <em>indexing</em> to speed up the performance of our system.
+                                </p>
+                                <p>
+                                    Due to academic integrity, we cannot post a public link to our code, so if you are interested in it, please <a href="mailto:alan.yessenbayev@gmail.com">contact me</a>.
+                                </p>
+                                  <div class="row align-bottom">
+                                    <div class="col-10">
+                                        <ul class="align-bottom list-unstyled">
+                                            <li><b>Collaborators:</b>
+                                                <a target="_blank" href="https://www.linkedin.com/in/zhouhang-shao-208b19128/">Zhouhang Shao</a>
+                                            </li>
+                                            <li><b>Time Period:</b> April-June 2018</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-2">
+                                        <!--<span style="font-size: 2em;"><a target="_blank" href="https://github.com/yessenbayev"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>-->
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm text-center">
+                                  <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/sql1.png"%}">
+                              </div>
+                          </div>
+                      </div>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                File Archiver
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div class="container content border shadow">
+                          <div class ="row bg-light rounded">
+                              <div class="col-sm my-2 py-auto">
+                                  <p>
+                                    We implemented Linux <em>file archiver</em> for the <em>Software Foundations I</em> course using <em>C++11 programming language</em>. 
+                                  </p>
+                                  <p>
+                                      We used <em>block-store flat file system</em> as the basis of our application, and I implemented <em>defragmentation</em> to keep our archives slim.
+                                  </p>
+                                  <p>
+                                    Due to academic integrity, we cannot post a public link to our code, so if you are interested in it, please <a href="mailto:alan.yessenbayev@gmail.com">contact me</a>.
+                                </p>
+                                  <div class="row align-bottom">
+                                    <div class="col-10">
+                                        <ul class="align-bottom list-unstyled">
+                                            <li><b>Collaborators:</b>
+                                                <ul>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/aarjavkothari/">Aarjav Kothari</a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/shrivatsan-rajagopalan-82b846149/">Shrivatsan Rajagopalan</a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/ruochao-yan/">Ruochao Yan</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><b>Time Period:</b> February-March 2018</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-2">
+                                        <!--<span style="font-size: 2em;"><a target="_blank" href="https://github.com/yessenbayev"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>-->
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-sm text-center">
+                                  <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/archiver.png"%}">
+                              </div>
+                          </div>
+                      </div>
+          </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                  Space with PyGame
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                      <div class="container content border shadow">
+                              <div class ="row bg-light rounded">
+                                  <div class="col-sm my-2 py-auto">
+                                      <p>
+                                      <em>Space</em> is my first attempt in creating a computer game. I started it mostly to show my little brother what programming can do.
+                                      </p>
+                                      <p>
+                                      This game is a <em>side-scrolling space shooter</em>, where the goal is to survive to get the highest score. 
+                                      </p>
+                                      <p>
+                                      The game was developed using the <a target="_blank" href="https://www.pygame.org/news">PyGame</a> library. All game assets were created in <em>Microsoft Paint3D</em>.
+                                      </p>
+                                      <div class="row align-bottom">
+                                        <div class="col-10">
+                                            <ul class="align-bottom list-unstyled">
+                                                <li><b>Collaborators:</b> None</li>
+                                                <li><b>Time Period:</b> January 2018</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2">
+                                            <span style="font-size: 2em;"><a target="_blank" href="https://github.com/yessenbayev/spacegame"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm text-center">
+                                      <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/spacegame.png"%}">
+                                  </div>
+                              </div>
+                          </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    Los Angeles Crime Data Visualization
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="container content border shadow">
+                              <div class ="row bg-light rounded">
+                                  <div class="col-sm my-2 py-auto">
+                                      <p>
+                                      <em>Los Angeles Crime Visualization</em> is my first full-blown data science project. We took the <a target="_blank" href="http://catalog.data.gov/dataset/crime-data-from-2010-to-present">Los Angeles Crime Data from 2010 to 2017</a>. </p>
+                                      <p>We utilized the <a target="_blank" href="https://developers.arcgis.com/python/">ArcGIS Python API</a> to create a heat map of crime in LA, <a target="_blank" href="https://matplotlib.org/">MatPlotLib</a> for charts and <em>Regular Expressions</em> to pre-process the dataset</p>
+                                      <p>I primarily worked on data pre-processing and the heat map.</p>
+                                      <div class="row align-bottom">
+                                        <div class="col-10">
+                                            <ul class="align-bottom list-unstyled">
+                                                <li><b>Collaborators:</b>
+                                                    <ul>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/samuelsunarjo/">Samuel Sunarjo</a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/peijin-wu-3b60ba153/">Peijin Wu</a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/matthew-rolan/">Matthew Rolan</a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/val-gonzalez/">Val Gonzalez</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><b>Time Period:</b> October-December 2017</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2">
+                                            <span style="font-size: 2em;"><a target="_blank" href="https://github.com/valegonzalez/ECE180_FinalProject"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm text-center">
+                                      <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/HOMICIDE.PNG"%}">
+                                  </div>
+                              </div>
+                          </div>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    WeatherBox Lamp
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="container content border shadow">
+                              <div class ="row bg-light rounded">
+                                  <div class="col-sm my-2 py-auto">
+                                      <p>
+                                      Originally an idea by awesome <a target="_blank" href="https://www.linkedin.com/in/stazia-tronboll-290019a7/">Stazia Tronboll</a>, <em>the WeatherBox Lamp</em> is my first IoT device that is based on the <a target="_blank" href="http://www.arduino.cc">Arduino</a> platform.</p> <p>We created a lamp, which is capable of reproducing rain, mist and different lighting settings depending on the
+                                      current weather in the location of interest. The purpose of this is not create interior ambiance, that is comparable to local weather.</p>
+                                      <p>
+                                          I primarily worked on structural and circuit design.
+                                      </p>
+
+                                      <div class="row align-bottom">
+                                        <div class="col-10">
+                                            <ul class="align-bottom list-unstyled">
+                                                <li><b>Collaborators:</b>
+                                                    <ul>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/stazia-tronboll-290019a7/">Stazia Tronboll</a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/linh-d-nguyen/">Linh Nguyen</a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/vladislav-iotov-817bb29b/">Vladislav Iotov</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><b>Time Period:</b> October-December 2017</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2">
+                                            <span style="font-size: 2em;"><a target="_blank" href="https://github.com/WigginWannabe/weatherbox"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm text-center">
+                                      <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/weatherbox.png"%}">
+                                  </div>
+                              </div>
+                          </div>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSeven">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    Line-Following RC Car
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                  <div class="card-body">
+                      <div class="container content border shadow">
+                              <div class ="row bg-light rounded">
+                                  <div class="col-sm my-2 py-auto">
+                                      <p>
+                                      <em>The line-following vehicle</em> marks the beginning of my passion towards everything hands-on. This project was created to compete in 
+                                      <em>GrandPrIEEE</em> Design Competition.
+                                      </p>
+                                      <p>
+                                          The project consisted of a <em>motor driver</em>, <em>line-scan camera</em> and <em>PID controller</em> (as the chassis was acquired separately).
+                                      </p>
+                                      <p>
+                                          I was the official team lead for my team. This experience taught me how to approach people, and deal with technical problems that arise on the path of creation.
+                                      </p>
+                                      <div class="row align-bottom">
+                                        <div class="col-10">
+                                            <ul class="align-bottom list-unstyled">
+                                                <li><b>Collaborators:</b> 
+                                                    <ul>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/jimmy-pham-38a208139/">Jimmy Pham</a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/jonathan-bradshaw-59a16a140/">Jonathan Bradshaw</a></li>
+                                                        <li><a target="_blank" href="https://www.linkedin.com/in/chenyuyang84/">Yuyang Chen</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><b>Time Period:</b> 2016-2017 Academic Year</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2">
+                                            <!--<span style="font-size: 2em;"><a target="_blank" href="https://github.com/yessenbayev"> <i class="fab text-center float-right fa-github nav-link"></i></a></span>-->
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm text-center">
+                                      <img class="img-thumbnail py-auto my-auto" style="max-height: 24em; width: auto;" src="{%static "img/rccar.jpg"%}">
+                                  </div>
+                              </div>
+                          </div>
+              </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+
+
+
+{%endblock%}

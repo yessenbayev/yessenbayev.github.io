@@ -1,0 +1,46 @@
+{%extends 'blog/layout.html'%}
+{%load static from staticfiles%}
+{%load static%}
+{%block title%}
+About
+{%endblock%}
+{%block content%}
+<div class="jumbotron about-me">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1 class="display-4">Hi, I'm <strong>Alan</strong>!</h1>
+            <p class="lead">I'm an engineer, a developer and just a nice guy :-)</p>
+            <p>I came to the United States from <em>Almaty, Kazakhstan</em>, and I quickly became attracted to the hands-on nature of engineering.</p>
+            <p>When I began my studies at UC San Diego, I found a passion in programmable circuits, such as those ran by <em>Arduino</em> and <em>Raspberry Pi</em>.
+            In the blink of an eye, I became captivated by the methodology of artificial intelligence, which kick-started
+        my specialization in Machine Learning and Controls during my undergraduate studies.</p>
+        <p>
+            I recently graduated from UC San Diego with a Master of Science in
+            <a target="_blank" href="http://ece.ucsd.edu/sites/ece.ucsd.edu/files/graduate/ISRC_18-19.pdf">Intelligent Systems, Robotics and Control</a>.
+        </p>
+        </div>
+        <div class="col-lg-4">
+            <img class="img-thumbnail" style="max-height: 24em; width: auto;" src="{%static "img/photo-magic.jpg"%}">
+        </div>
+    </div>
+</div>
+<div class="jumbotron about-site">
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="img-thumbnail" style="max-height: 24em; width: auto;" src="{%static "img/responsive-1.jpg"%}">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-4">Why the website?</h1>
+            <p class="lead">A hub for information about me</p>
+            <p>Nowadays, creators and job-seekers use multiple platforms to present themselves.
+               The purpose of this website is to simplify online interactions with me. It provides:
+               <ul>
+		       <li>A simple interface to <a href="mailto:alan.yessenbayev@gmail.com">communicate with me</a></li>
+                   <li>An overview of my <a href="/projects">accomplishments</a></li>
+                   <li>A centralized access to my other accounts of interest</li>
+               </ul>
+            </p>
+        </div>
+    </div>
+</div>
+{%endblock%}
