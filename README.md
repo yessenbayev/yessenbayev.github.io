@@ -1,1 +1,1 @@
-# yessenbayev.github.io
+# www.yessenbayev.com
