@@ -21,7 +21,7 @@ body {
 
 .carousel-inner a{
     color: turquoise;
-}  
+}
 
 @media screen and (max-height: 500px) {
     .carousel-item {
@@ -30,7 +30,7 @@ body {
 
 a.navlink{
     color:lightgrey;
-} 
+}
 
 .card button{
     white-space:normal;
