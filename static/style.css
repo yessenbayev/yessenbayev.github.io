@@ -13,6 +13,10 @@ body {
     background: transparent;
 }
 
+.carousel-caption {
+    margin: 0.5em;
+}
+
 .carousel-inner a{
     color: turquoise;
 }
